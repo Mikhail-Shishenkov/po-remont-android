@@ -1,0 +1,38 @@
+# Android / Kotlin / Gradle
+.gradle/
+build/
+*/build/
+local.properties
+
+# IDE
+.idea/
+*.iml
+
+# Build outputs
+*.apk
+*.aab
+*.ap_
+*.hprof
+
+# Logs and archives
+*.log
+*.zip
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Native build artifacts
+.cxx/
+.externalNativeBuild/
+
+# Misc
+captures/
+out/
+release/
