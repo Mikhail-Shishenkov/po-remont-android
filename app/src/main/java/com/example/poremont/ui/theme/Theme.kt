@@ -15,6 +15,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalView
 import androidx.core.view.WindowCompat
 
+<<<<<<< HEAD
 /*
  * Define a custom colour palette that loosely follows the provided Figma
  * inspiration: a light background with a warm orange accent. The primary
@@ -49,6 +50,10 @@ private val LightColorScheme = lightColorScheme(
     surface = Color.White,
     onSurface = Color(0xFF1B1C20)
 )
+=======
+private val DarkColorScheme = darkColorScheme(primary = Color(0xFF6750A4), secondary = Color(0xFF625B71), tertiary = Color(0xFF7D5260))
+private val LightColorScheme = lightColorScheme(primary = Color(0xFF6750A4), secondary = Color(0xFF625B71), tertiary = Color(0xFF7D5260))
+>>>>>>> 4d10c6215eb7563b03f068add459083a6174924d
 
 @Composable
 fun PORemontTheme(darkTheme: Boolean = isSystemInDarkTheme(), dynamicColor: Boolean = true, content: @Composable () -> Unit) {
@@ -67,6 +72,7 @@ fun PORemontTheme(darkTheme: Boolean = isSystemInDarkTheme(), dynamicColor: Bool
             WindowCompat.getInsetsController(window, view).isAppearanceLightStatusBars = !darkTheme
         }
     }
+<<<<<<< HEAD
     // Provide a default typography instance.  The generated Typography class
     // from material3 is used here instead of the one from kotlin.text to avoid
     // type mismatches during composition.
@@ -75,4 +81,7 @@ fun PORemontTheme(darkTheme: Boolean = isSystemInDarkTheme(), dynamicColor: Bool
         typography = androidx.compose.material3.Typography(),
         content = content
     )
+=======
+    MaterialTheme(colorScheme = colorScheme, typography = Typography, content = content)
+>>>>>>> 4d10c6215eb7563b03f068add459083a6174924d
 }
